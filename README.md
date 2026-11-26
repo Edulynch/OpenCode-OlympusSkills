@@ -54,6 +54,7 @@ Use `@` plus a skill ID. GitHub workflows require authenticated [`gh`](https://c
 | Skill | What it does | Optional shortcut source |
 | --- | --- | --- |
 | [`olympus-goal-writer`](.opencode/skills/olympus-goal-writer/SKILL.md) | Drafts a `/goal` of at most 4,000 UTF-16 code units, keeps independent work moving when blocked, and never runs it. | [`olympus.goal.write.md`](commands/olympus.goal.write.md) |
+| [`olympus-tasks`](.opencode/skills/olympus-tasks/SKILL.md) | Turns the conversation into numbered, prioritized tasks with dependencies where needed. | [`olympus.tasks.md`](commands/olympus.tasks.md) |
 | [`olympus-git-issue-list`](.opencode/skills/olympus-git-issue-list/SKILL.md) | Ranks open issues and shows priorities, blockers, and sub-issues; read-only. | [`olympus.git.issue-list.md`](commands/olympus.git.issue-list.md) |
 | [`olympus-git-issue-create`](.opencode/skills/olympus-git-issue-create/SKILL.md) | Turns findings into standalone issues or native epic/sub-issue trees; can show a draft first. | [`olympus.git.issue-create.md`](commands/olympus.git.issue-create.md) |
 | [`olympus-git-issue-work`](.opencode/skills/olympus-git-issue-work/SKILL.md) | Works named issues or selects a prioritized batch, implements and tests, and leaves PRs open by default. | [`olympus.git.issue-work.md`](commands/olympus.git.issue-work.md) |
@@ -65,6 +66,8 @@ Use `@` plus a skill ID. GitHub workflows require authenticated [`gh`](https://c
 ### ⌨️ Shortcuts
 
 The Skills CLI installs the selected skill. Shortcuts are optional source files: copy only a chosen `.md` from [`commands/`](commands/) to the destination project's `.opencode/commands/`. Each shortcut loads its matching skill and forwards `$ARGUMENTS`; it is not installed automatically.
+
+For example: `/olympus.tasks Turn what we agreed into tasks.`
 
 ## 🧪 Check locally
 
