@@ -54,6 +54,7 @@ Escribe `@` seguido del ID de la skill. Los flujos de GitHub requieren una sesi�
 | Skill | Para qué sirve | Fuente del atajo opcional |
 | --- | --- | --- |
 | [`olympus-goal-writer`](.opencode/skills/olympus-goal-writer/SKILL.md) | Redacta un `/goal` de hasta 4,000 unidades de código UTF-16, mantiene el avance independiente cuando algo se bloquea y no lo ejecuta. | [`olympus.goal.write.md`](commands/olympus.goal.write.md) |
+| [`olympus-tasks`](.opencode/skills/olympus-tasks/SKILL.md) | Convierte la conversación en tareas numeradas y priorizadas, con dependencias cuando hacen falta. | [`olympus.tasks.md`](commands/olympus.tasks.md) |
 | [`olympus-git-issue-list`](.opencode/skills/olympus-git-issue-list/SKILL.md) | Ordena issues abiertos y muestra prioridades, bloqueos y subissues; solo lectura. | [`olympus.git.issue-list.md`](commands/olympus.git.issue-list.md) |
 | [`olympus-git-issue-create`](.opencode/skills/olympus-git-issue-create/SKILL.md) | Convierte hallazgos en issues independientes o árboles nativos de epics/subissues; puede mostrar un borrador primero. | [`olympus.git.issue-create.md`](commands/olympus.git.issue-create.md) |
 | [`olympus-git-issue-work`](.opencode/skills/olympus-git-issue-work/SKILL.md) | Trabaja issues indicados o elige un grupo priorizado, implementa y prueba, y por defecto deja los PRs abiertos. | [`olympus.git.issue-work.md`](commands/olympus.git.issue-work.md) |
@@ -65,6 +66,8 @@ Escribe `@` seguido del ID de la skill. Los flujos de GitHub requieren una sesi�
 ### ⌨️ Atajos
 
 El CLI de Skills instala la skill elegida. Los atajos son archivos fuente opcionales: copia solo el `.md` que elijas de [`commands/`](commands/) a `.opencode/commands/` en el proyecto destino. Cada atajo carga su skill correspondiente y reenvía `$ARGUMENTS`; no se instala automáticamente.
+
+Por ejemplo: `/olympus.tasks Convierte lo que acordamos en tareas.`
 
 ## 🧪 Validación local
 
